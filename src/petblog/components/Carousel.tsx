@@ -12,34 +12,39 @@ import { useState } from 'react';
 export const Carousel = () => {
   const [images, setImages] = useState([
     {
-      src: '/assets/img/carousel/item01.jpg',
+      src: 'https://res.cloudinary.com/dv1tlnr1p/image/upload/v1663544567/petblog/item01_orzc88.jpg',
       desc: '',
       title: 'Item 1',
     },
     {
-      src: '/assets/img/carousel/item02.jpg',
+      src: 'https://res.cloudinary.com/dv1tlnr1p/image/upload/v1663544567/petblog/item03_epzwor.jpg',
       desc: '',
       title: 'Item 2',
     },
     {
-      src: '/assets/img/carousel/item03.jpg',
+      src: 'https://res.cloudinary.com/dv1tlnr1p/image/upload/v1663544567/petblog/item05_wjphph.jpg',
       desc: '',
       title: 'Item 3',
     },
     {
-      src: '/assets/img/carousel/item04.jpg',
+      src: 'https://res.cloudinary.com/dv1tlnr1p/image/upload/v1663544568/petblog/item02_ctglmb.jpg',
       desc: '',
       title: 'Item 4',
     },
     {
-      src: '/assets/img/carousel/item05.jpg',
+      src: 'https://res.cloudinary.com/dv1tlnr1p/image/upload/v1663544567/petblog/item04_lmibu5.jpg',
       desc: '',
       title: 'Item 5',
     },
     {
-      src: '/assets/img/carousel/item06.jpg',
+      src: 'https://res.cloudinary.com/dv1tlnr1p/image/upload/v1663544567/petblog/item06_aymawp.jpg',
       desc: '',
       title: 'Item 6',
+    },
+    {
+      src: 'https://res.cloudinary.com/dv1tlnr1p/image/upload/v1662602462/petblog/ybvapxeso0yvmhmikdll.jpg',
+      desc: '',
+      title: 'Item 7',
     },
   ]);
   return (
@@ -85,7 +90,11 @@ export const Carousel = () => {
           >
             {images.map(({ src, desc, title }) => (
               <SwiperSlide key={src}>
-                <CarouseItem src={src} desc={desc} title={title} />
+                <CarouseItem
+                  src={src}
+                  desc={desc}
+                  title={title}
+                />
               </SwiperSlide>
             ))}
           </Swiper>
