@@ -1,0 +1,7 @@
+@use '../global/colors' as c;
+
+.container {
+  background-color: c.$bg-color;
+  padding: 1rem;
+  height: calc(100vh - 60px);
+}
